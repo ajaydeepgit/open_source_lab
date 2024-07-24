@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sz;
+    int avg;
+    cout<<"enter size ";
+    cin>>sz;
+    int arr[sz];
+    int sum = 0;
+    for(int i=0;i<sz;i++) {
+        cin>>arr[i];
+    }
+    for(int j=0;j<sz;j++) {
+        sum=sum+arr[j];
+    }
+    avg= sum/sz;
+    cout<<"average of "<<sz<< " numbers is "<<avg;
+    return 0;
+}
